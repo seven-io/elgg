@@ -7,7 +7,7 @@
     <id>sms77_sms</id>
     <license>GNU General Public License version 2</license>
     <name>Sms77 SMS Provider</name>
-    <version type="dist">1.0.0</version>
+    <version type="dist">1.0.1</version>
     <website>https://www.github.com/sms77io/elgg-sms</website>
 
     <requires>
