@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'admin:sms77' => 'Sms77',
+    'admin:sms77' => 'sms77',
     'admin:sms77:test_sms' => 'Send Test SMS',
 
-    'menu:page:header:sms77' => 'Sms77',
+    'menu:page:header:sms77' => 'sms77',
 
     'sms77:sms:api_key' => 'API key',
     'sms77:sms:api_key:help' => 'Get yours at https://www.sms77.io',
@@ -37,5 +37,5 @@ return [
     'sms77:sms:to' => 'Recipient(s)',
     'sms77:sms:to:help' => 'Enter a phone number separated by comma',
 
-	'sms77:settings' => 'Sms77 Settings',
+	'sms77:settings' => 'sms77 Settings',
 ];

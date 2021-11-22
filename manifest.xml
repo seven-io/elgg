@@ -3,11 +3,11 @@
     <author>sms77 e.K. (support@sms77.io)</author>
     <category>notifications</category>
     <copyright>(c) 2021 sms77 e.K.</copyright>
-    <description>Sends SMS notifications using Sms77 API</description>
+    <description>Sends SMS notifications using sms77 API</description>
     <id>sms77_sms</id>
     <license>GNU General Public License version 2</license>
-    <name>Sms77 SMS Provider</name>
-    <version type="dist">1.0.1</version>
+    <name>sms77 SMS Provider</name>
+    <version type="dist">1.1.0</version>
     <website>https://www.github.com/sms77io/elgg-sms</website>
 
     <requires>

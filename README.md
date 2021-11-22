@@ -1,10 +1,10 @@
-Sms77 SMS provider
+sms77 SMS provider
 ===================
 ![Elgg Logo](https://img.shields.io/badge/Elgg-2.1.x-orange.svg?style=flat-square)
 
 ## Features
 
- * Send SMS using Sms77 API
+ * Send SMS using sms77 API
 
 ### Usage
 
@@ -25,3 +25,7 @@ notify_user($member->guid, 0, $subject, $message, [
 ```php
 elgg_send_sms('+4987654210', 'HI2U!');
 ```
+
+#### Support
+
+Need help? Feel free to [contact us](https://www.sms77.io/en/company/contact/).

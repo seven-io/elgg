@@ -1,8 +1,8 @@
 {
 	"name": "sms77/elgg-sms",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"type": "elgg-plugin",
-	"description": "Sms77 SMS API",
+	"description": "sms77 SMS API",
 	"homepage": "https://sms77.io",
 	"keywords": [
 		"elgg", "plugin", "notifications", "sms"
