@@ -1,19 +1,19 @@
 {
-	"name": "sms77/elgg-sms",
-	"version": "1.1.0",
+	"name": "seven.io/elgg",
+	"version": "2.0.0",
 	"type": "elgg-plugin",
-	"description": "sms77 SMS API",
-	"homepage": "https://sms77.io",
+	"description": "seven SMS API",
+	"homepage": "https://www.seven.io",
 	"keywords": [
 		"elgg", "plugin", "notifications", "sms"
 	],
 	"license": "GPL-2.0",
 	"authors": [
 		{
-			"name": "sms77 e.K.",
-			"email": "support@sms77.io",
+			"name": "seven communications GmbH & Co. KG",
+			"email": "support@seven.io",
 			"role": "Organization",
-			"homepage": "https://www.sms77.io"
+			"homepage": "https://www.seven.io"
 		}
 	],
 	"require": {

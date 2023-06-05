@@ -1,37 +1,37 @@
 <?php
 
 /**
- * Sms77 SMS Service
- * @author    sms77 e.K. <support@sms77.io>
- * @copyright Copyright (c) 2021, sms77 e.K.
+ * seven SMS Service
+ * @author seven communications GmbH & Co. KG <support@seven.io>
+ * @copyright Copyright (c) 2021-2022, sms77 e.K. ; 2023-present seven communications GmbH & Co. KG
  */
 @include_once __DIR__  . '/vendor/autoload.php';
 
-elgg_register_event_handler('init', 'system', 'sms77_sms_init');
+elgg_register_event_handler('init', 'system', 'seven_sms_init');
 
 /**
  * Initialize the plugin
  * @return void
  */
-function sms77_sms_init() {
-    elgg_register_plugin_hook_handler('send', 'sms', 'sms77_sms_send');
+function seven_sms_init() {
+    elgg_register_plugin_hook_handler('send', 'sms', 'seven_sms_send');
 
     elgg_register_plugin_hook_handler('register', 'menu:page',
-        [\Sms77\ElggSms\Menus::class, 'setupPageMenu']);
+        [\Seven\ElggSms\Menus::class, 'setupPageMenu']);
 
-    elgg_register_action('sms77/test_sms', __DIR__ . '/actions/sms77/test_sms.php',
+    elgg_register_action('seven/test_sms', __DIR__ . '/actions/seven/test_sms.php',
         'admin');
 }
 
 /**
- * Sends SMS using Sms77
+ * Sends SMS using seven
  * @param string $hook "send"
  * @param string $type "sms"
  * @param bool $return Has the SMS been sent?
  * @param array $params Hook params
  * @return bool | void
  */
-function sms77_sms_send($hook, $type, $return, $params) {
+function seven_sms_send($hook, $type, $return, $params) {
     if ($return === true) {
         return; // another plugin has already sent the SMS
     }
@@ -40,8 +40,8 @@ function sms77_sms_send($hook, $type, $return, $params) {
         elgg_extract('to', $params), elgg_extract('text', $params));
 }
 
-function sms77_get_setting($key) {
-    return elgg_get_plugin_setting($key, 'sms77_sms');
+function seven_get_setting($key) {
+    return elgg_get_plugin_setting($key, 'seven_sms');
 }
 
 /**
@@ -51,27 +51,26 @@ function sms77_get_setting($key) {
  * @return bool | void
  */
 function elgg_send_sms($to, $text) {
-    $apiKey = sms77_get_setting('api_key');
+    $apiKey = seven_get_setting('api_key');
 
     if (!$apiKey) {
         return;
     }
 
-    $signature = sms77_get_setting('signature');
+    $signature = seven_get_setting('signature');
     if ($signature) {
         $text .= " $signature";
     }
 
     try {
         (new \Sms77\Api\Client($apiKey, 'elgg'))->sms($to, $text, [
-            'debug' => sms77_get_setting('debug'),
-            'flash' => sms77_get_setting('flash'),
-            'foreign_id' => sms77_get_setting('foreign_id'),
-            'from' => sms77_get_setting('from'),
-            'label' => sms77_get_setting('label'),
-            'no_reload' => sms77_get_setting('no_reload'),
-            'performance_tracking' => sms77_get_setting('performance_tracking'),
-            'type' => 'direct',
+            'debug' => seven_get_setting('debug'),
+            'flash' => seven_get_setting('flash'),
+            'foreign_id' => seven_get_setting('foreign_id'),
+            'from' => seven_get_setting('from'),
+            'label' => seven_get_setting('label'),
+            'no_reload' => seven_get_setting('no_reload'),
+            'performance_tracking' => seven_get_setting('performance_tracking'),
         ]);
 
         return true;

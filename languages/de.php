@@ -1,41 +1,41 @@
 <?php
 
 return [
-    'admin:sms77' => 'sms77',
-    'admin:sms77:test_sms' => 'Test-SMS senden',
+    'admin:seven' => 'seven',
+    'admin:seven:test_sms' => 'Test-SMS senden',
 
-    'menu:page:header:sms77' => 'sms77',
+    'menu:page:header:seven' => 'seven',
 
-    'sms77:sms:api_key' => 'API-Schlüssel',
-    'sms77:sms:api_key:help' => 'Erhältlich auf https://www.sms77.io',
-    'sms77:sms:debug' => 'Debug',
-    'sms77:sms:debug:help' => 'Keine SMS werden versandt wenn aktiviert',
-    'sms77:sms:error' => 'SMS-Versand fehlgeschlagen',
-    'sms77:sms:flash' => 'Flash',
-    'sms77:sms:flash:help' => 'Flash-SMS werden, geräteabhängig, '
+    'seven:sms:api_key' => 'API-Schlüssel',
+    'seven:sms:api_key:help' => 'Erhältlich auf https://www.seven.io',
+    'seven:sms:debug' => 'Debug',
+    'seven:sms:debug:help' => 'Keine SMS werden versandt wenn aktiviert',
+    'seven:sms:error' => 'SMS-Versand fehlgeschlagen',
+    'seven:sms:flash' => 'Flash',
+    'seven:sms:flash:help' => 'Flash-SMS werden, geräteabhängig, '
         . 'direkt im Display angezeigt und nicht gespeichert',
-    'sms77:sms:foreign_id' => 'Foreign ID',
-    'sms77:sms:foreign_id:help' =>
+    'seven:sms:foreign_id' => 'Foreign ID',
+    'seven:sms:foreign_id:help' =>
         'Max. 64 Zeichen bestehend aus a-z, A-Z, 0-9, .-_@',
-    'sms77:sms:from' => 'Absender',
-	'sms77:sms:from:help' =>
+    'seven:sms:from' => 'Absender',
+	'seven:sms:from:help' =>
         'Absender - bis 11 alphanumerischen oder 16 numerischen Zeichen',
-    'sms77:sms:label' => 'Label',
-    'sms77:sms:label:help' => 'Max. 100 Zeichen bestehend aus a-z, A-Z, 0-9, .-_@',
-    'sms77:sms:no_reload' => 'Duplikate erlauben',
-    'sms77:sms:no_reload:help' => 'Erlaube Versand von Duplikaten - identischer Text '
+    'seven:sms:label' => 'Label',
+    'seven:sms:label:help' => 'Max. 100 Zeichen bestehend aus a-z, A-Z, 0-9, .-_@',
+    'seven:sms:no_reload' => 'Duplikate erlauben',
+    'seven:sms:no_reload:help' => 'Erlaube Versand von Duplikaten - identischer Text '
         . 'und Empfänger innerhalb 180 Sekunden',
-    'sms77:sms:send' => 'SMS versenden',
-    'sms77:sms:performance_tracking' => 'Performance tracking',
-	'sms77:sms:performance_tracking:help' =>
-        'Siehe https://help.sms77.io/de/articles/3125341-performance-tracking',
-    'sms77:sms:signature' => 'Signatur',
-	'sms77:sms:signature:help' => 'Text an ausgehende Nachrichten anhängen',
-    'sms77:sms:success' => 'SMS versandt',
-    'sms77:sms:text' => 'Text',
-    'sms77:sms:text:help' => 'Maximal 10000 Zeichen',
-    'sms77:sms:to' => 'Empfängernummer(n)',
-    'sms77:sms:to:help' => 'Rufnummer(n) getrennt per Komma eingeben',
+    'seven:sms:send' => 'SMS versenden',
+    'seven:sms:performance_tracking' => 'Performance tracking',
+	'seven:sms:performance_tracking:help' =>
+        'Siehe https://help.seven.io/de/performance-tracking',
+    'seven:sms:signature' => 'Signatur',
+	'seven:sms:signature:help' => 'Text an ausgehende Nachrichten anhängen',
+    'seven:sms:success' => 'SMS versandt',
+    'seven:sms:text' => 'Text',
+    'seven:sms:text:help' => 'Maximal 10000 Zeichen',
+    'seven:sms:to' => 'Empfängernummer(n)',
+    'seven:sms:to:help' => 'Rufnummer(n) getrennt per Komma eingeben',
 
-	'sms77:settings' => 'sms77 Einstellungen',
+	'seven:settings' => 'seven Einstellungen',
 ];
