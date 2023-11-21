@@ -8,8 +8,6 @@ return [
 
     'seven:sms:api_key' => 'API key',
     'seven:sms:api_key:help' => 'Get yours at https://www.seven.io',
-    'seven:sms:debug' => 'Debug',
-    'seven:sms:debug:help' => 'If activated no SMS will be sent or calculated',
     'seven:sms:error' => 'SMS could not be sent',
     'seven:sms:flash' => 'Flash',
     'seven:sms:flash:help' => 'Flash SMS get directly displayed in the receivers display',

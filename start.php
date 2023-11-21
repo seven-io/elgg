@@ -64,7 +64,6 @@ function elgg_send_sms($to, $text) {
 
     try {
         (new \Sms77\Api\Client($apiKey, 'elgg'))->sms($to, $text, [
-            'debug' => seven_get_setting('debug'),
             'flash' => seven_get_setting('flash'),
             'foreign_id' => seven_get_setting('foreign_id'),
             'from' => seven_get_setting('from'),

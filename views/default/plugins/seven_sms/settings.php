@@ -32,7 +32,6 @@ $seven_text('from');
 $seven_text('label');
 $seven_text('signature');
 
-$seven_switch('debug');
 $seven_switch('flash');
 $seven_switch('no_reload');
 $seven_switch('performance_tracking');

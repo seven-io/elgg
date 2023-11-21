@@ -8,8 +8,6 @@ return [
 
     'seven:sms:api_key' => 'API-Schlüssel',
     'seven:sms:api_key:help' => 'Erhältlich auf https://www.seven.io',
-    'seven:sms:debug' => 'Debug',
-    'seven:sms:debug:help' => 'Keine SMS werden versandt wenn aktiviert',
     'seven:sms:error' => 'SMS-Versand fehlgeschlagen',
     'seven:sms:flash' => 'Flash',
     'seven:sms:flash:help' => 'Flash-SMS werden, geräteabhängig, '
