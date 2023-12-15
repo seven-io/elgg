@@ -1,3 +1,5 @@
+<img src="https://www.seven.io/wp-content/uploads/Logo.svg" width="250" />
+
 seven SMS provider
 ===================
 ![Elgg Logo](https://img.shields.io/badge/Elgg-2.1.x-orange.svg?style=flat-square)
